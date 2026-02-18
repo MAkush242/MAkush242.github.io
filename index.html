@@ -2,14 +2,210 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <title>PapiersClairs</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PapiersClairs — Accompagnement titre de séjour étudiant</title>
+
+    <meta name="description"
+        content="Accompagnement titre de séjour étudiant en France. Préparation du dossier, checklist personnalisée et suivi annuel pour éviter refus et retards.">
+    <meta name="keywords"
+        content="titre de séjour étudiant, renouvellement titre de séjour, dossier préfecture étudiant, aide titre de séjour France">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #eef2ff
+        }
+
+        .fade {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all .8s cubic-bezier(.22, 1, .36, 1)
+        }
+
+        .fade.visible {
+            opacity: 1;
+            transform: none
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, .7);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, .5)
+        }
+
+        .liquid {
+            background: radial-gradient(circle at 30% 20%, rgba(99, 102, 241, .35), transparent 40%), radial-gradient(circle at 80% 70%, rgba(14, 165, 233, .35), transparent 40%)
+        }
+
+        .imgFloat {
+            transform: translateY(0);
+            transition: transform 6s ease-in-out
+        }
+
+        .imgFloat:hover {
+            transform: translateY(-12px)
+        }
+    </style>
 </head>
 
-<body>
+<body class="text-gray-900">
 
-    <h1>PapiersClairs</h1>
-    <p>Mon site est maintenant en ligne.</p>
+    <header class="fixed w-full glass border-b border-white/40 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-semibold text-xl tracking-tight">PapiersClairs</div>
+            <a href="#contact" class="bg-black text-white px-5 py-2 rounded-full text-sm font-medium">Commencer</a>
+        </div>
+    </header>
+
+    <section class="pt-40 pb-28 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center liquid rounded-[40px]">
+        <div class="fade">
+            <h1 class="text-5xl md:text-6xl font-semibold leading-tight tracking-tight">
+                Sécurisez votre titre de séjour étudiant en France
+            </h1>
+
+            <p class="mt-6 text-xl text-gray-700">
+                Préparation claire du dossier, organisation des documents et suivi administratif pour éviter refus et
+                retards.
+            </p>
+        </div>
+
+        <div class="fade relative">
+            <img src="image/site 4.jpg" class="rounded-3xl shadow-2xl imgFloat" />
+            <img src="image/site 5.jpg" class="rounded-2xl shadow-xl w-40 absolute -bottom-6 -left-6 imgFloat" />
+        </div>
+    </section>
+
+    <section class="py-28 max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-semibold text-center mb-16 fade">Votre prise en charge pas à pas</h2>
+
+        <div class="space-y-12">
+
+            <div class="grid md:grid-cols-2 gap-10 items-center fade">
+                <img src="image/site papier.jpg" class="rounded-3xl shadow-lg imgFloat" />
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-sm text-gray-500">Étape 1 — Analyse</div>
+                    <h3 class="text-2xl font-semibold mt-1">Diagnostic du dossier</h3>
+                    <p class="text-gray-700 mt-2">Identification des erreurs possibles et des pièces manquantes.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center fade">
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-sm text-gray-500">Étape 2 — Préparation</div>
+                    <h3 class="text-2xl font-semibold mt-1">Checklist personnalisée</h3>
+                    <p class="text-gray-700 mt-2">Organisation complète des documents avant dépôt.</p>
+                </div>
+                <img src="image/site papier 2.jpg" class="rounded-3xl shadow-lg imgFloat" />
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center fade">
+                <img src="image/site photo 3.jpg" class="rounded-3xl shadow-lg imgFloat" />
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-sm text-gray-500">Étape 3 — Suivi</div>
+                    <h3 class="text-2xl font-semibold mt-1">Accompagnement annuel</h3>
+                    <p class="text-gray-700 mt-2">Rappels et préparation pour éviter les oublis administratifs.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-24 bg-white/60">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+            <h2 class="text-4xl font-semibold">Qui sommes-nous</h2>
+            <p class="text-lg text-gray-700">
+                PapiersClairs est un service d’accompagnement administratif dédié aux étudiants étrangers.
+                Nous aidons à comprendre les démarches et organiser les documents sans jargon juridique.
+            </p>
+            <p class="text-gray-600 text-sm">
+                Nous ne remplaçons pas l’administration et nous ne déposons pas à votre place.
+                Nous vous guidons pour préparer un dossier clair et complet.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold mb-12">Pour qui</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-semibold text-xl mb-2">Étudiants étrangers</h3>
+                    <p class="text-gray-700">Premier titre ou renouvellement</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-semibold text-xl mb-2">Dossiers incomplets</h3>
+                    <p class="text-gray-700">Vous ne savez pas quoi fournir</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="font-semibold text-xl mb-2">Situations stressantes</h3>
+                    <p class="text-gray-700">Retard ou peur du refus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white/60">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold mb-8">Tarif unique</h2>
+
+            <div class="glass rounded-3xl p-10 inline-block">
+                <div class="text-5xl font-semibold mb-2">360 €</div>
+                <div class="text-gray-600 mb-4">accompagnement sur 12 mois</div>
+
+                <ul class="text-gray-700 text-left space-y-2 mt-6">
+                    <li>✔ Analyse du dossier</li>
+                    <li>✔ Checklist personnalisée</li>
+                    <li>✔ Préparation dépôt</li>
+                    <li>✔ Suivi et rappels</li>
+                </ul>
+
+                <div class="mt-6 text-sm text-gray-500">Paiement possible en 3 fois</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-center mb-10">Commencer mon dossier</h2>
+
+            <form action="mailto:contact@99street.world" method="POST" enctype="text/plain"
+                class="glass rounded-3xl p-8 space-y-4">
+                <input type="text" name="Nom" placeholder="Nom" class="w-full p-3 rounded-xl border" required>
+                <input type="email" name="Email" placeholder="Email" class="w-full p-3 rounded-xl border" required>
+                <textarea name="Situation" placeholder="Décrivez votre situation"
+                    class="w-full p-3 rounded-xl border h-32" required></textarea>
+                <button class="bg-black text-white px-8 py-4 rounded-full w-full text-lg">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-16 text-sm text-gray-600 bg-white/60 border-t border-white/40">
+        <div class="max-w-5xl mx-auto px-6 space-y-4">
+            <div class="font-medium text-gray-800">Informations légales</div>
+            <p>Service d’accompagnement administratif et organisationnel. La décision finale appartient exclusivement à
+                l’administration française.</p>
+            <p>Le service ne comprend pas : décision administrative, dépôt à la place du demandeur, représentation
+                juridique.</p>
+            <div class="pt-4">
+                <div class="font-medium text-gray-800">Éditeur du service</div>
+                <p>Service proposé par la société 99 street</p>
+                <p>Contact : contact@99street.world</p>
+                <p>Adresse : 20bis rue Jean Giraudoux, 75116 Paris, France</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') })
+        }, { threshold: .2 });
+        document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+    </script>
 
 </body>
 
